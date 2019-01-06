@@ -5,10 +5,11 @@ ruby '2.5.3'
 
 gem 'bootsnap', '>= 1.1.0', require: false
 gem 'devise'
+gem 'jbuilder', '~> 2.5'
 gem 'pg', '>= 0.18', '< 2.0'
 gem 'puma', '~> 3.11'
 gem 'rails', '~> 5.2.2'
-gem 'redis', '~> 4.0'
+gem 'ransack', github: 'activerecord-hackery/ransack'
 
 
 group :development, :test do
