@@ -1,0 +1,47 @@
+AllCops:
+  Exclude:
+    - db/**/*
+    - Gemfile
+    - vendor/**/*
+    - config/environments/*
+    - bin/**/*
+
+Rails:
+  Enabled: true
+
+Layout/EndOfLine:
+  Enabled: false
+
+Metrics/LineLength:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Naming/FileName:
+    Enabled: false
+
+# Disables "Use nested module/class definitions instead of compact style" warning
+ClassAndModuleChildren:
+  Enabled: false
+
+# Increases "Class definition is too long" warning from 100 to 120
+Metrics/ClassLength:
+  Max: 120
+
+# Increases "Module has too many lines" warning from 100 to 120
+Metrics/ModuleLength:
+  Max: 120
+
+# Disables "Missing top-level class documentation comment" warning
+Documentation:
+  Enabled: false
+
+CyclomaticComplexity:
+  Enabled: false
+
+PerceivedComplexity:
+  Enabled: false
