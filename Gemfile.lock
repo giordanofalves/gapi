@@ -1,4 +1,14 @@
 GIT
+  remote: https://github.com/activerecord-hackery/ransack.git
+  revision: 322a014cd4c491d1832dd371e1f32ffd247b14ba
+  specs:
+    ransack (2.1.1)
+      actionpack (>= 5.0)
+      activerecord (>= 5.0)
+      activesupport (>= 5.0)
+      i18n
+
+GIT
   remote: https://github.com/stympy/faker.git
   revision: 41b212d6512eae974d612af7dab593ca8ab01349
   branch: master
@@ -80,6 +90,9 @@ GEM
     i18n (1.4.0)
       concurrent-ruby (~> 1.0)
     jaro_winkler (1.5.2)
+    jbuilder (2.8.0)
+      activesupport (>= 4.2.0)
+      multi_json (>= 1.2)
     json (2.1.0)
     listen (3.1.5)
       rb-fsevent (~> 0.9, >= 0.9.4)
@@ -98,6 +111,7 @@ GEM
     mini_portile2 (2.4.0)
     minitest (5.11.3)
     msgpack (1.2.4)
+    multi_json (1.13.1)
     nio4r (2.3.1)
     nokogiri (1.10.0)
       mini_portile2 (~> 2.4.0)
@@ -146,7 +160,6 @@ GEM
     rb-fsevent (0.10.3)
     rb-inotify (0.10.0)
       ffi (~> 1.0)
-    redis (4.1.0)
     responders (2.4.0)
       actionpack (>= 4.2.0, < 5.3)
       railties (>= 4.2.0, < 5.3)
@@ -218,12 +231,13 @@ DEPENDENCIES
   devise
   factory_bot_rails
   faker!
+  jbuilder (~> 2.5)
   listen (>= 3.0.5, < 3.2)
   pg (>= 0.18, < 2.0)
   pry-byebug
   puma (~> 3.11)
   rails (~> 5.2.2)
-  redis (~> 4.0)
+  ransack!
   rspec-rails (~> 3.8)
   rspec_junit_formatter
   rubocop
